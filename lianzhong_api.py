@@ -64,7 +64,7 @@ def main(api_username, api_password, file_name, api_post_url, yzm_min, yzm_max, 
         'yzm_minlen': yzm_min,
         'yzm_maxlen': yzm_max,
         'yzmtype_mark': yzm_type,
-        'zztool_token': tools_token
+        'zztool_token': '6d2c0d7fd993356644f952329275796f'
     }
     s = requests.session()
     # r = s.post(api_post_url, headers=headers, data=data, files=files, verify=False, proxies=proxies)
@@ -175,7 +175,7 @@ if __name__ == '__main__':
          '1',
          '8',
          '1001',
-         '')
+         '6d2c0d7fd993356644f952329275796f')
 
     '''
 		main() 参数介绍
