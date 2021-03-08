@@ -42,7 +42,7 @@ def p_main (O00O0OOOO0O000000 ,OO000OO00OO00O00O ,OOOOOO000OO00O000 ):#line:22
                 O000OO0OOOO0OOOO0 .close ()#line:52
             time .sleep (2 )#line:53
             O0O000OO0O0OOO00O ='./captcha.gif'#line:55
-            O0O00OOOOO00O000O =lianzhong_api .main (O00O0OOOO0O000000 ,OO000OO00OO00O00O ,O0O000OO0O0OOO00O ,'http://v1-http-api.jsdama.com/api.php?mod=php&act=upload','','','1008','8dc962b56f1968a844450834ef91bfd0')#line:57
+            O0O00OOOOO00O000O =lianzhong_api .main (O00O0OOOO0O000000 ,OO000OO00OO00O00O ,O0O000OO0O0OOO00O ,'http://v1-http-api.jsdama.com/api.php?mod=php&act=upload','','','1008','6d2c0d7fd993356644f952329275796f')#line:57
             O00OOOO000O0OO00O =O0O00OOOOO00O000O .json ()['data']['val']#line:59
             OOOOOOOOOO0OO00O0 =O0O00OOOOO00O000O .json ()['data']['id']#line:60
             print ('图片已识别:'+O00OOOO000O0OO00O )#line:61
