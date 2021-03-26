@@ -20,7 +20,7 @@ def get_email ():#line:17
     OO00O00O0000O000O ='varytmp+{}uu{}d@gmail.com'.format (OO000O0000O0O0O00 ,OOOO0OOO00O0OO0O0 )#line:20
     return OO00O00O0000O000O #line:21
 def p_main (O00O0OOOO0O000000 ,OO000OO00OO00O00O ,OOOOOO000OO00O000 ):#line:22
-            OOOOO0OO0000OOOO0 ='https://jc88.me/share?userid='+OOOOOO000OO00O000 #line:23
+            OOOOO0OO0000OOOO0 ='https://pjj.world/'+OOOOOO000OO00O000 #line:23
             OO0OOOO000O0O000O =get_email ()#line:24
             print (OO0OOOO000O0O000O )#line:25
             O0O0OO00OO00O0O00 =Options ()#line:26
