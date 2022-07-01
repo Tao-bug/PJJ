@@ -67,10 +67,9 @@ def main(api_username, api_password, file_name, api_post_url, yzm_min, yzm_max, 
         'zztool_token': '6d2c0d7fd993356644f952329275796f'
     }
     s = requests.session()
-    # r = s.post(api_post_url, headers=headers, data=data, files=files, verify=False, proxies=proxies)
-    r = s.post(api_post_url, headers=headers, data=data, files=files, verify=False)
-
-    return r
+    return s.post(
+        api_post_url, headers=headers, data=data, files=files, verify=False
+    )
 
 def re_err( username, password, yzm_id):
     '''
@@ -109,12 +108,14 @@ captchaId：由 接⼝1 返回的 captchaId 识别ID
         'yzm_id': yzm_id
     }
     s = requests.session()
-    # r = s.post(api_post_url, headers=headers, data=data, files=files, verify=False, proxies=proxies)
-    r = s.post(url='http://v1-http-api.jsdama.com/api.php?mod=php&act=error', headers=headers, data=data, verify=False)
+    return s.post(
+        url='http://v1-http-api.jsdama.com/api.php?mod=php&act=error',
+        headers=headers,
+        data=data,
+        verify=False,
+    )
 
-    return r
-
-def get_points(username, password):#获取点数
+def get_points(username, password):    #获取点数
     '''
     softwareId：同 接⼝1
 softwareSecret：同 接⼝1
@@ -148,10 +149,12 @@ password：同 接⼝1
         'user_pw': password,
     }
     s = requests.session()
-    # r = s.post(api_post_url, headers=headers, data=data, files=files, verify=False, proxies=proxies)
-    r = s.post(url='http://v1-http-api.jsdama.com/api.php?mod=php&act=point', headers=headers, data=data, verify=False)
-
-    return r
+    return s.post(
+        url='http://v1-http-api.jsdama.com/api.php?mod=php&act=point',
+        headers=headers,
+        data=data,
+        verify=False,
+    )
 
 def download_vcode(url):
     try:
